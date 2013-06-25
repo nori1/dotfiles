@@ -13,7 +13,6 @@ dotfiles = (
 print '.vim derectory symlink making...'
 os.system('ln -s ~/dotfiles/.vim ~/.vim')
 print 'done'
-print
 
 ## .zshrcの初期設定
 #os.system('touch ~/.zshrc')
@@ -50,8 +49,8 @@ f.write(dot_vimrc)
 f.close
 print '.vimrc generate...'
           
-os.system('touch ~/.vimrc.local')
-print '.vimrc.local generate...'
+#os.system('touch ~/.vimrc.local')
+#print '.vimrc.local generate...'
           
 # $HOMEのdotfileはdotfilesディレクトリのシンボリックリンクにする
 for dotfile in dotfiles:

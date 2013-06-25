@@ -19,6 +19,10 @@ syntax on
 set laststatus=2
 set list
 set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%
+" backupファイルを作成しない
+set nobackup
+set noswapfile
+set backupdir=/tmp
 " カッコを書いたら中に移動する
 imap () ()<LEFT>
 imap [] []<LEFT>
@@ -66,6 +70,7 @@ Bundle 'Shougo/neosnippet'
 Bundle 'thinca/vim-quickrun'
 Bundle 'scrooloose/nerdtree'
 Bundle 'wesleyche/SrcExpl'
+Bundle 'vim-scripts/taglist.vim'
 Bundle 'wesleyche/Trinity'
 Bundle 'ack.vim'
 "Bundle 'errormarker.vim'
